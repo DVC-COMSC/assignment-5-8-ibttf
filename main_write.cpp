@@ -22,8 +22,9 @@ int main() {
         cin >> score1;
         cout << "Enter the second score: ";
         cin >> score2;
-
-        myfile << name << " " << score1 << " " << score2 << "\n";
+        float total = (score1 + score2);
+        float average= total/2;
+        myfile << name << " " << score1 << " " << score2 << " " << total << " " << average << "\n";
     }
 
     myfile.close();
